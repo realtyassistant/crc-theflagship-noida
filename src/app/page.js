@@ -5,9 +5,9 @@ import Footer from "@/components/footer";
 import FooterConnect from "@/components/footerConnect";
 import Gallery from "@/components/gallery";
 import Header from "@/components/header";
-import HeroSec from "@/components/HeroSec";
+import HeroSec from "@/components/heroSec";
 import ImgWithText from "@/components/imgWithText";
-import Location from "@/components/Location";
+import Location from "@/components/location";
 import Pricing from "@/components/pricing";
 import ProjectOverview from "@/components/projectOverview";
 import RowText from "@/components/rowText";
@@ -15,20 +15,22 @@ import RowText from "@/components/rowText";
 export default function Home() {
   return (
     <>
-      <Header />
-      <HeroSec />
-      <ImgWithText />
-      <ProjectOverview />
-      <BrochureStrip />
-      <RowText />
-      <Amenities />
-      <Pricing />
-      <BrochureStrip />
-      <Gallery />
-      <FloorPlan />
-      <Location />
-      <FooterConnect />
-      <Footer />
+      <div className="container mx-auto px-2">
+        <Header />
+        <HeroSec />
+        <ImgWithText />
+        <ProjectOverview />
+        <BrochureStrip />
+        <RowText />
+        <Amenities />
+        <Pricing />
+        <BrochureStrip />
+        <Gallery />
+        <FloorPlan />
+        <Location />
+        <FooterConnect />
+        <Footer />
+      </div>
     </>
   );
 }
