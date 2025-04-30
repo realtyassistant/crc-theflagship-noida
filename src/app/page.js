@@ -11,24 +11,61 @@ import Location from "@/components/location";
 import Pricing from "@/components/pricing";
 import ProjectOverview from "@/components/projectOverview";
 import RowText from "@/components/rowText";
+import { phoneNumber } from "@/constant";
 
 export default function Home() {
+  const brochureData = {
+    heading: "Download E-Brochure Now!",
+    text: "Get all the details about the project to make an informed decision!",
+  };
+
+  const bookNowData = {
+    heading: "Book your Site Visit Now!",
+    text: "Visit the site & see if your requirements are matching, book your site visit now!",
+    btnName: "Book Now",
+    number: phoneNumber,
+  };
+
   return (
     <>
-      <div className="container mx-auto px-2 sm:px-[90px]">
-        <Header />
-        <HeroSec />
+      <Header />
+      <HeroSec />
+      <div className="container mx-auto px-2 sm:px-[90px] mb-[100px]">
         <ImgWithText />
-        <ProjectOverview />
-        <BrochureStrip />
+      </div>
+
+      <div className="bg-color py-[60px] px-[16px]">
+        <div className="container mx-auto px-2 sm:px-[90px]">
+          <ProjectOverview />
+        </div>
+      </div>
+
+      <div className="bg-[#142d63] text-white py-[60px] px-[16px] mb-[100px]">
+        <BrochureStrip {...brochureData} />
+      </div>
+
+      <div className="container mx-auto px-2 sm:px-[90px] mb-[100px]">
         <RowText />
-        <Amenities />
+      </div>
+
+      <div className="bg-color py-[60px] px-[16px] mb-[100px]">
+        <div className="container mx-auto px-2 sm:px-[90px]">
+          <Amenities />
+        </div>
+      </div>
+
+      <div className="container mx-auto px-2 sm:px-[90px] mb-[100px]">
         <Pricing />
-        <BrochureStrip />
-        <Gallery />
-        <FloorPlan />
-        <Location />
-        <FooterConnect />
+      </div>
+      <div className="bg-[#142d63] text-white py-[60px] px-[16px]">
+        <BrochureStrip {...bookNowData} />
+      </div>
+      <Gallery />
+      <FloorPlan />
+      <Location />
+      <FooterConnect />
+
+      <div className="bg-black text-white py-[60px] px-[16px]">
         <Footer />
       </div>
     </>

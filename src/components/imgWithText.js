@@ -5,7 +5,7 @@ export default function ImgWithText() {
   return (
     <>
       <h1 className="custom-heading text-center">Your Home To Live Your Life At Its Best</h1>
-      <hr class="border-t-2 border-black" />
+      <hr className="border-t-2 border-black" />
       <div className="flex flex-col lg:flex-row gap-6 mt-8">
         <div className="flex-1">
           <div className="relative w-full h-[350px]">
