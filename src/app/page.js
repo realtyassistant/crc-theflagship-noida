@@ -15,7 +15,7 @@ import RowText from "@/components/rowText";
 export default function Home() {
   return (
     <>
-      <div className="container mx-auto px-2">
+      <div className="container mx-auto px-2 sm:px-[90px]">
         <Header />
         <HeroSec />
         <ImgWithText />

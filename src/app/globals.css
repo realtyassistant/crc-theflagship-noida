@@ -98,3 +98,9 @@
 .custom-btn:hover {
   transform: scale(1.05);
 }
+.custom-heading {
+  font-size: 40px;
+  color: #142d63;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
