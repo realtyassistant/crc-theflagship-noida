@@ -7,29 +7,29 @@ export default function HeroSec() {
     <>
       <div className="hero-sec-bg sm:h-screen">
         <div className="container mx-auto px-2 sm:px-[90px]">
-          <div className="flex justify-between gap-3 lg:gap-60 items-center flex-col lg:flex-row h-auto lg:h-screen py-5">
+          <div className="flex justify-between gap-3 lg:gap-40 items-center flex-col lg:flex-row h-auto lg:h-screen py-5">
             <div className="bg-[rgba(255,255,255,0.9)]  rounded-[20px] shadow-[rgba(0, 0, 0, 0.7) 0px 1px 5px] p-5">
-              <h2 className="custom-heading text-center text-themeColor !mb-0">Sobha Neopolis</h2>
-              <p className="font-bold text-center text-[1.2rem] mb-3">Panathur Main Road</p>
+              <h2 className="custom-heading text-center text-themeColor !mb-0">CRC The Flagship</h2>
+              <p className="font-bold text-center text-[1.2rem] mb-3">Sector 140A, Noida</p>
               <hr className="border-t-2 border-black" />
 
               <div className="flex justify-center flex-col mx-auto text-center my-4">
                 <p className="flex gap-2 items-center">
-                  <FaCheckCircle /> 1, 3 & 4 BHK Apartments
+                  <FaCheckCircle /> Premium Retail Shops
                 </p>
                 <p className="flex gap-2 items-center">
-                  <FaCheckCircle /> 12 mins from Prestige Tech Park
+                  <FaCheckCircle /> Right On Noida Expressway
                 </p>
                 <p className="flex gap-2 items-center">
-                  <FaCheckCircle /> 15 mins from Oakridge School
+                  <FaCheckCircle /> Close To Prime Business & IT Parks
                 </p>
               </div>
               <hr className="border-t-2 border-black" />
 
-              <h2 className="font-bold text-themeColor text-center text-[1.5rem] my-4">Starting from ₹93 Lakhs*</h2>
-              <p className="font-bold text-center text-[1.2rem] mb-3">New Launch Offer is applicable for a limited time only!</p>
+              <h2 className="font-bold text-themeColor text-center text-[1.5rem] my-4">₹75 Lakhs Onwards*</h2>
+              <p className="font-bold text-center text-[1.2rem] mb-3">Limited Units Left… Hurry Up!</p>
               <div className="mt-8">
-                <ButtonWithNumber btnName="Dowanload Brochure" icon={<FaDownload />} />
+                <ButtonWithNumber btnName="Enquire Now" icon={<FaDownload />} />
               </div>
             </div>
             <div className="bg-[rgba(255,255,255,0.9)]  rounded-[20px] shadow-[rgba(0, 0, 0, 0.7) 0px 1px 5px] p-5">

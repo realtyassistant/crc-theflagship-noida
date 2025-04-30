@@ -1,5 +1,7 @@
 import ButtonWithNumber from "./buttonWithNumber";
 import { FaDownload } from "../../public/icon";
+import { amenitiesData, amenitiesBtnName } from "@/constant";
+import React from "react";
 
 export default function Amenities() {
   return (
@@ -7,20 +9,18 @@ export default function Amenities() {
       <h2 className="custom-heading text-themeColor text-center">Amenities</h2>
       <div className="custom-box-shadow mt-5 mb-6 bg-white">
         <div className="grid grid-cols-1 lg:grid-cols-12 px-6 gap-3 text-center lg:text-left">
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
-          <div className="col-span-6">➤ Club House</div>
+          {amenitiesData &&
+            amenitiesData.length > 0 &&
+            amenitiesData?.map((v, i) => (
+              <React.Fragment key={i}>
+                <div className="col-span-6">➤{v}</div>
+              </React.Fragment>
+            ))}
         </div>
       </div>
 
       <div className="mt-8">
-        <ButtonWithNumber btnName="Get Specifications" icon={<FaDownload />} />
+        <ButtonWithNumber btnName={amenitiesBtnName} icon={<FaDownload />} />
       </div>
     </>
   );

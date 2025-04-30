@@ -1,1 +1,131 @@
 export const phoneNumber = 1234567890;
+export const RERA_NUMBER = "UPRERAPRJ184164";
+export const btnOne = "";
+export const btnTwo = "";
+export const btnThree = "";
+export const btnFour = "";
+export const btnFive = "";
+export const btnSix = "";
+export const btnSeven = "";
+export const btnEight = "";
+export const btnNine = "";
+
+export const imagWithTextData = {
+  image: "/banner.jpg",
+  alt: "banner",
+  heading: "Push Your Business With Endless Opportunities",
+  firstPara:
+    "<strong>CRC The Flagship in Sector 140A</strong> is a premium 2.4 million sq. ft. ultra-modern business and retail complex. Designed to meet today’s business needs, <strong>CRC Flagship retail shops in Noida</strong> offer an ideal environment for rapid scalability and expansion.",
+  secondPara:
+    "This vibrant campus features a bustling retail centre, creating a holistic and dynamic business environment. Thoughtfully landscaped and fully sustainable, <strong>CRC The Flagship in Noida</strong> is surrounded by alluring natural landscapes, commbining modern architecture with breathtaking scenery for an inspiring setting for businesses and visitors.",
+  thirdPara:
+    "This upcoming commercial capital of Noida promises investors a future-ready business destination with world-class amenities, making it an ideal choice for expanding enterprises and investors seeking long-term growth.",
+  fourthPara:
+    "<strong>This CRC Sector 140 Noida</strong>  project is a future-ready destination designed to maximise visibility, customer engagement, and long-term profitability for retailers.",
+  reraNumber: `RERA Number: ${RERA_NUMBER}`,
+  btnName: "Enquire Now",
+};
+
+export const projectOverviewHeading = "Project Overview";
+export const projectOverviewData = [
+  {
+    title: "Type of Project",
+    text: "Commercial",
+  },
+  {
+    title: "Location",
+    text: "Sector 140A, Noida",
+  },
+  {
+    title: "Land Area",
+    text: "2.4 million sq. ft.",
+  },
+  {
+    title: "No. of Towers",
+    text: "3",
+  },
+  {
+    title: "Typology",
+    text: "Retail Shops",
+  },
+  {
+    title: "Size Range",
+    text: "487.18 - 490.52 sq.ft.",
+  },
+  {
+    title: "Price Range",
+    text: "₹75 Lakhs Onwards*",
+  },
+  {
+    title: "Possession Date",
+    text: "November 2027",
+  },
+];
+
+export const brochureData = {
+  heading: "Download Project Brochure",
+  text: "Take an all-around CRC Flagship Noida project overview to make an informed decision!",
+};
+
+export const rowWithTextData = {
+  heading: "Premium CRC 140A Retail Spaces In Noida For Elevated Experience",
+  firstPara:
+    "➤ <strong>CRC The Flagship Noida</strong> offers an exceptional opportunity for investors and retailers seeking prime commercial space in Noida’s booming Sector 140A. This integrated business and retail hub is designed to support scalable growth and high footfall.",
+  secondPara:
+    "➤ CRC <strong> retail shop spaces in Noida </strong> here benefit from the project’s strategic location, offering excellent connectivity and unmatched visibility on the Noida Expressway. With a thoughtfully landscaped campus and a vibrant, eco-friendly environment, this <strong> CRC Sector 140A Noida </strong> property ensures a sustainable and inviting atmosphere for shoppers and businesses.",
+  thirdPara:
+    "➤ Shoppers and visitors can enjoy a seamless blend of retail, entertainment, and dining within the same vibrant campus of this <strong>CRC commercial project</strong> . Ample parking and premium infrastructure enhance convenience, while luxury serviced suites and office spaces attract a high-profile clientele.",
+  reraNumber: `RERA Number: ${RERA_NUMBER}`,
+  text: "Limited Units Left… Hurry Up!",
+  btnName: "Enquire For The Best Prices",
+};
+
+export const amenitiesData = [
+  "Sky Lounge",
+  "Putting Golf",
+  "Infinity Pool",
+  "Proposal Point",
+  "Coffee Shops",
+  "Meditation Zone",
+  "Hi-Capacity Elevators",
+  "Relaxing Spa",
+  "2500+ Parking",
+  "Hypermarket",
+  "Grand Lobbies",
+  "Multi-Tier Security",
+  "Auditorium",
+  "Landscaping",
+  "High-Street Retail",
+  "Amphitheatre",
+  "Water Feature",
+  "Retail Drop-off",
+  "Kids Play Area",
+  "Al fresco Seating",
+  "Banquet Lawn",
+  "Infinity Pool",
+];
+export const amenitiesBtnName = "Get Specifications";
+
+export const pricingHeading = "Size & Pricing";
+export const pricingTableHeadings = [
+  {
+    tableHeadingFirst: "Typology",
+    tableHeadingSecond: "Size",
+    tableHeadingThird: "Price",
+  },
+];
+export const pricingTableData = [
+  {
+    tableTextFirst: "Retail Spaces",
+    tableTextSecond: "487.18 - 490.52 sq.ft.",
+    tableTextThird: "On Request*",
+  },
+];
+export const priceBtn = "Get Size Layout & Payment Plan";
+
+export const bookNowData = {
+  heading: "Book Your Site Visit Now!",
+  text: "Join us for a site visit and secure your perfect retail space in Noida at CRC new project.",
+  btnName: "Book Now",
+  number: phoneNumber,
+};

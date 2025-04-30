@@ -11,21 +11,9 @@ import Location from "@/components/location";
 import Pricing from "@/components/pricing";
 import ProjectOverview from "@/components/projectOverview";
 import RowText from "@/components/rowText";
-import { phoneNumber } from "@/constant";
+import { phoneNumber, brochureData, bookNowData } from "@/constant";
 
 export default function Home() {
-  const brochureData = {
-    heading: "Download E-Brochure Now!",
-    text: "Get all the details about the project to make an informed decision!",
-  };
-
-  const bookNowData = {
-    heading: "Book your Site Visit Now!",
-    text: "Visit the site & see if your requirements are matching, book your site visit now!",
-    btnName: "Book Now",
-    number: phoneNumber,
-  };
-
   return (
     <>
       <Header />
