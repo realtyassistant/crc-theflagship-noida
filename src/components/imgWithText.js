@@ -4,7 +4,7 @@ import { FaWpforms } from "../../public/icon";
 export default function ImgWithText() {
   return (
     <>
-      <h1 className="custom-heading text-center">Your Home To Live Your Life At Its Best</h1>
+      <h1 className="custom-heading text-center text-themeColor">Your Home To Live Your Life At Its Best</h1>
       <hr className="border-t-2 border-black" />
       <div className="flex flex-col lg:flex-row gap-6 mt-8">
         <div className="flex-1">
@@ -20,7 +20,7 @@ export default function ImgWithText() {
           <p className="mt-10">
             The location is right in the heart of East Bangalore. Several Reputed Schools, Hospitals & Major IT Parks are within 10 mins radius of the project.
           </p>
-          <button className="custom-btn flex items-center gap-4 mx-auto mt-10">
+          <button className="custom-btn flex items-center gap-4 mx-auto mt-10 bg-themeColor">
             <FaWpforms /> Enquire Now
           </button>
         </div>

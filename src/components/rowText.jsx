@@ -5,7 +5,7 @@ export default function RowText() {
   return (
     <>
       <div>
-        <h3 className="custom-heading text-center">LUXURY LIVING FOR A SELECT FEW AT SOBHA NEOPOLIS</h3>
+        <h3 className="custom-heading text-center text-themeColor">LUXURY LIVING FOR A SELECT FEW AT SOBHA NEOPOLIS</h3>
         <hr className="border-t-2 border-black" />
         <ul className="mt-4 space-y-4">
           <li>

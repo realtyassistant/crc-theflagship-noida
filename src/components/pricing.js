@@ -4,7 +4,7 @@ import ButtonWithNumber from "./buttonWithNumber";
 export default function Pricing() {
   return (
     <>
-      <h2 className="custom-heading text-center">Pricing</h2>
+      <h2 className="custom-heading text-center text-themeColor">Pricing</h2>
 
       {/* table */}
       <div className="custom-box-shadow mt-5 mb-6 overflow-x-auto">
@@ -26,7 +26,7 @@ export default function Pricing() {
               <td className="py-3 px-4">1 BHK</td>
               <td className="py-3 px-4">666 Sq.Ft</td>
               <td className="py-3 px-4">
-                <button className="custom-btn flex items-center gap-2 text-[#142d63]">
+                <button className="custom-btn flex items-center gap-2 text-themeColor bg-themeColor">
                   <FaLock /> Unlock Price
                 </button>
               </td>

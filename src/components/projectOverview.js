@@ -3,7 +3,7 @@ import React from "react";
 export default function ProjectOverview() {
   return (
     <>
-      <h2 className="custom-heading text-center">Project Overview</h2>
+      <h2 className="custom-heading text-center text-themeColor">Project Overview</h2>
       <hr className="border-t-2 border-black" />
 
       <div className="custom-box-shadow mt-5 mb-6">
