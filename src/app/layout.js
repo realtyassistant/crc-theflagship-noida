@@ -1,6 +1,8 @@
 // import localFont from "next/font/local";
+import { FaWhatsapp } from "react-icons/fa";
 import "./globals.css";
 import { Urbanist } from "next/font/google";
+import { phoneNumber } from "@/constant";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -49,6 +51,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+
+        <a
+          href={`https://wa.me/${phoneNumber}`} // Replace with your number
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-custom-shadow cursor-pointer hover:bg-green-600 transition"
+        >
+          <FaWhatsapp size={24} />
+        </a>
       </body>
     </html>
   );

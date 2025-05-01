@@ -1,4 +1,4 @@
-export const phoneNumber = 1234567890;
+export const phoneNumber = 9220639111;
 export const RERA_NUMBER = "UPRERAPRJ184164";
 export const btnOne = "Enquire Now";
 export const btnTwo = "Download Now";

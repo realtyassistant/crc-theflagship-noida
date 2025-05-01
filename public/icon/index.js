@@ -7,5 +7,6 @@ import { FaCarAlt } from "react-icons/fa";
 import { FaArrowRightToBracket } from "react-icons/fa6";
 import { FaLock } from "react-icons/fa";
 import { FaCheck } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
-export { FaCheckCircle, FaDownload, IoIosCall, FaWpforms, IoMdArrowDroprightCircle, FaCarAlt, FaArrowRightToBracket, FaLock, FaCheck };
+export { FaCheckCircle, FaDownload, IoIosCall, FaWpforms, IoMdArrowDroprightCircle, FaCarAlt, FaArrowRightToBracket, FaLock, FaCheck, FaWhatsapp };
