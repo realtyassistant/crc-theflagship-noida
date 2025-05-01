@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { FaWpforms } from "../../public/icon";
 import { imagWithTextData } from "@/constant";
+import ButtonWithNumber from "./buttonWithNumber";
 
 export default function ImgWithText() {
   return (
@@ -19,9 +20,10 @@ export default function ImgWithText() {
           <p>{imagWithTextData?.thirdPara}</p>
           <p dangerouslySetInnerHTML={{ __html: imagWithTextData?.fourthPara }}></p>
           <p>{imagWithTextData?.reraNumber}</p>
-          <button className="custom-btn flex items-center gap-4 mx-auto mt-10 bg-themeColor">
-            <FaWpforms /> {imagWithTextData?.btnName}
-          </button>
+
+          <div className="mt-10">
+            <ButtonWithNumber btnName={imagWithTextData?.btnName} icon={<FaWpforms />} number={false} />
+          </div>
         </div>
       </div>
     </>

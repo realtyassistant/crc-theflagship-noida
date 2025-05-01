@@ -1,4 +1,5 @@
 import { FaDownload } from "../../public/icon";
+import ButtonWithNumber from "./buttonWithNumber";
 
 export default function BrochureStrip({ heading = "", text = "", btnName = "Download Now", number = "" }) {
   return (
@@ -10,18 +11,12 @@ export default function BrochureStrip({ heading = "", text = "", btnName = "Down
             <p className="mt-3">{text}</p>
           </div>
           <div>
-            <button className="custom-btn flex items-center gap-4  !bg-white !text-themeColor">
-              <FaDownload /> {btnName}
-            </button>
-
-            {number && (
-              <p className="mt-3 font-bold">
-                Call Us:{" "}
-                <a href={`tel:${number}`} className="text-white hover:underline">
-                  {number}
-                </a>
-              </p>
-            )}
+            <ButtonWithNumber
+              btnName={btnName}
+              icon={<FaDownload />}
+              customStyle="custom-btn flex items-center gap-4  !bg-white !text-themeColor"
+              number={false}
+            />
           </div>
         </div>
       </div>
