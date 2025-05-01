@@ -1,15 +1,21 @@
-import localFont from "next/font/local";
+// import localFont from "next/font/local";
 import "./globals.css";
+import { Urbanist } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+// const geistSans = localFont({
+//   src: "./fonts/GeistVF.woff",
+//   variable: "--font-geist-sans",
+//   weight: "100 900",
+// });
+// const geistMono = localFont({
+//   src: "./fonts/GeistMonoVF.woff",
+//   variable: "--font-geist-mono",
+//   weight: "100 900",
+// });
+const urbanist = Urbanist({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"], // Choose weights you want
+  variable: "--font-urbanist", // Custom CSS variable name
 });
 
 export const metadata = {
@@ -30,7 +36,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-W2T5BPNP');`}
         </script> */}
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased `}>
+      {/* <body className={`${geistSans.variable} ${geistMono.variable} antialiased `}> */}
+      <body className={urbanist.variable}>
         {children}
 
         {/* <!-- Google Tag Manager (noscript) --> */}
