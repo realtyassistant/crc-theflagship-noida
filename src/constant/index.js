@@ -158,3 +158,22 @@ export const aboutCrcGropupData = {
 
 export const floorPlanHeading = "Master & Floor Plans";
 export const galleryHeading = "Gallery";
+
+export const heroSecCardData = {
+  heading: "CRC The Flagship",
+  location: "Sector 140A, Noida",
+  keyPoint: [
+    {
+      text: "Premium Retail Shops",
+    },
+    {
+      text: "Right On Noida Expressway",
+    },
+    {
+      text: "Close To Prime Business & IT Parks",
+    },
+  ],
+  price: "₹75 Lakhs Onwards*",
+  text: "Limited Units Left… Hurry Up!",
+  btnName: `${btnOne}`,
+};
