@@ -10,6 +10,9 @@ export const btnSeven = "Get All Floor Plans And Specifications";
 export const btnEight = "Book Site Visit";
 export const projectUrl = "https://www.up-rera.in/projects";
 
+export const baseURL = process.env.NEXT_PUBLIC_LEAD_FORM_BASE_URL;
+export const thankYouURL = process.env.NEXT_PUBLIC_LEAD_FORM_THANKYOU;
+
 export const imagWithTextData = {
   image: "/banner.jpg",
   alt: "banner",
@@ -176,4 +179,10 @@ export const heroSecCardData = {
   price: "₹75 Lakhs Onwards*",
   text: "Limited Units Left… Hurry Up!",
   btnName: `${btnOne}`,
+};
+
+export const footerData = {
+  paraOne: `CRC The Flagship RERA: ${RERA_NUMBER} || Realty Assistant Pvt. Ltd. RERA: UPRERAAGT18286`,
+  disclaimer:
+    "The content provided on this website is for information purposes only and does not constitute an offer to avail of any service. The prices mentioned are subject to change without prior notice, and the availability of properties mentioned is not guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorised marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved. The content, design, and information on this website are protected by copyright and other intellectual property rights. Any unauthorised use or reproduction of the content may violate applicable laws. For accurate and up-to-date information regarding services, pricing, availability, and any other details, it is advisable to contact us directly through the provided contact information on this website. Thank you for visiting our website.",
 };

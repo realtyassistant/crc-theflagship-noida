@@ -1,20 +1,48 @@
 "use client";
 
-import { phoneNumber } from "@/constant";
+import { phoneNumber, thankYouURL } from "@/constant";
 import Link from "next/link";
-import { useRouter } from "next/navigation"; // ← Note this import
+import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import Cookies from "js-cookie";
 
 export default function ThankYouPage() {
   const router = useRouter();
 
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      router.push("/");
-    }, 5000);
+  const getLeadId = Cookies.get("leadId");
 
-    return () => clearTimeout(timeout);
-  }, [router]);
+  const thankYouPageRequest = async () => {
+    if (getLeadId) {
+      try {
+        const response = await fetch(thankYouURL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ lead_id: getLeadId }),
+        });
+
+        const data = await response.json();
+
+        if (data?.status) {
+          Cookies.remove("leadId");
+          setTimeout(() => {
+            router.push("/");
+          }, 5000);
+        } else {
+          console.warn("Invalid response:", data);
+        }
+      } catch (error) {
+        console.error("Failed to send thank-you request:", error);
+      }
+    } else {
+      console.warn("leadId cookie not found!");
+    }
+  };
+
+  useEffect(() => {
+    thankYouPageRequest();
+  }, [getLeadId]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white text-center px-4">

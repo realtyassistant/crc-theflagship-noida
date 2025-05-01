@@ -2,8 +2,13 @@
 
 import React, { useState } from "react";
 import { FaArrowRightToBracket } from "../../public/icon";
+import { baseURL } from "@/constant";
+import Cookies from "js-cookie";
+import { useRouter } from "next/navigation";
 
 export default function LeadForm() {
+  const router = useRouter();
+
   const [leadForm, setLeadForm] = useState({
     name: "",
     number: "",
@@ -42,11 +47,38 @@ export default function LeadForm() {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleLeadFormSubmit = (e) => {
+  const handleLeadFormSubmit = async (e) => {
     e.preventDefault();
 
     if (validateForm()) {
       console.log("✅ Lead Submitted:", leadForm);
+      try {
+        const res = await fetch(baseURL, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            project_id: 890,
+            campaign_id: 1,
+            website_url: "https://crc-theflagshipnoida.com",
+            name: leadForm?.name,
+            email: leadForm?.email,
+            phone: leadForm?.number,
+            react_check: true,
+          }),
+        });
+
+        const leadResponse = await res.json();
+
+        if (leadResponse?.status) {
+          console.log("lears", leadResponse?.status);
+          Cookies.set("leadId", leadResponse?.data, { expires: 7, path: "/" });
+          router.push("/thank-you");
+        }
+      } catch (e) {
+        console.log("something is wrong", e?.message);
+      }
       setLeadForm({
         name: "",
         number: "",
