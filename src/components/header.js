@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ export default function Header() {
   return (
     <header className="bg-white text-black sticky top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <h1 className="text-xl font-bold">Logo</h1>
+        <Image src="/logo.png" alt="Sample" width={80} height={50} />
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex gap-6">
