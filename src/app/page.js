@@ -8,10 +8,12 @@ import Gallery from "@/components/gallery";
 import Header from "@/components/header";
 import HeroSec from "@/components/heroSec";
 import ImgWithText from "@/components/imgWithText";
+import LeadForm from "@/components/leadForm";
 import Location from "@/components/location";
 import Pricing from "@/components/pricing";
 import ProjectOverview from "@/components/projectOverview";
 import RowText from "@/components/rowText";
+import TimerModal from "@/components/timerModal";
 import { phoneNumber, brochureData, bookNowData } from "@/constant";
 
 export default function Home() {
@@ -78,6 +80,10 @@ export default function Home() {
       <div className="bg-black text-white py-[60px] px-[16px]">
         <Footer />
       </div>
+
+      <TimerModal autoOpenModal={true}>
+        <LeadForm />
+      </TimerModal>
     </>
   );
 }

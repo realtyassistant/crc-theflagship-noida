@@ -3,14 +3,25 @@
 import { phoneNumber } from "@/constant";
 import { FaDownload, IoIosCall } from "../../public/icon";
 import { ModalWraper } from "./modalWraper";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import LeadForm from "./leadForm";
+import TimerModal from "./timerModal";
 
 export default function ButtonWithNumber({ btnName = "", icon = <FaDownload />, number = true, customStyle = "" }) {
   const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem("hasClicked", false);
+  }, []);
+
+  const handleManualOpen = () => {
+    setOpen(true);
+    localStorage.setItem("hasClicked", "true"); // prevent TimerModal
+  };
+
   return (
     <>
-      <button className={`custom-btn flex items-center gap-4 mx-auto bg-themeColor ${customStyle}`} onClick={() => setOpen(true)}>
+      <button className={`custom-btn flex items-center gap-4 mx-auto bg-themeColor ${customStyle}`} onClick={handleManualOpen}>
         {icon} {btnName}
       </button>
       <ModalWraper open={open} setOpen={setOpen}>
