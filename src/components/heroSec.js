@@ -1,6 +1,7 @@
 import ButtonWithNumber from "./buttonWithNumber";
 import { FaDownload, FaCheckCircle } from "../../public/icon";
 import LeadForm from "./leadForm";
+import { btnOne } from "@/constant";
 
 export default function HeroSec() {
   return (
@@ -29,7 +30,7 @@ export default function HeroSec() {
               <h2 className="font-bold text-themeColor text-center text-[1.5rem] my-4">₹75 Lakhs Onwards*</h2>
               <p className="font-bold text-center text-[1.2rem] mb-3">Limited Units Left… Hurry Up!</p>
               <div className="mt-8">
-                <ButtonWithNumber btnName="Enquire Now" icon={<FaDownload />} />
+                <ButtonWithNumber btnName={btnOne} icon={<FaDownload />} />
               </div>
             </div>
             <div className="bg-[rgba(255,255,255,0.9)]  rounded-[20px] shadow-[rgba(0, 0, 0, 0.7) 0px 1px 5px] p-5">

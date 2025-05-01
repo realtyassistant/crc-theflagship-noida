@@ -1,3 +1,4 @@
+import AboutCrcGroup from "@/components/aboutCrcGroup";
 import Amenities from "@/components/amenities";
 import BrochureStrip from "@/components/brochureStrip";
 import FloorPlan from "@/components/floorPlan";
@@ -66,6 +67,10 @@ export default function Home() {
 
       <div className="container mx-auto px-2 sm:px-[90px] mb-[100px]" id="location">
         <Location />
+      </div>
+
+      <div className="container mx-auto px-2 sm:px-[90px] mb-[100px]">
+        <AboutCrcGroup />
       </div>
 
       <FooterConnect />

@@ -1,5 +1,4 @@
 import { pricingTableHeadings, pricingHeading, priceBtn, pricingTableData } from "@/constant";
-import { FaLock } from "../../public/icon";
 import ButtonWithNumber from "./buttonWithNumber";
 
 export default function Pricing() {

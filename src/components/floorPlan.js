@@ -2,11 +2,12 @@ import { CustomSlider } from "./customSlider";
 import ButtonWithNumber from "./buttonWithNumber";
 import { FaDownload } from "../../public/icon";
 import Image from "next/image";
+import { btnSeven, floorPlanHeading } from "@/constant";
 
 export default function FloorPlan() {
   return (
     <>
-      <h2 className="custom-heading text-center text-themeColor">Master & Floor Plans</h2>
+      <h2 className="custom-heading text-center text-themeColor">{floorPlanHeading}</h2>
 
       <div className="custom-box-shadow mt-5 mb-6 !px-[3.5rem] !py-[1rem] lg:!px-[7rem] lg:!py-[4rem] bg-white flex justify-center">
         <CustomSlider>
@@ -17,7 +18,7 @@ export default function FloorPlan() {
       </div>
 
       <div className="mt-8">
-        <ButtonWithNumber btnName="Get All Floor Plans & Specifications" icon={<FaDownload />} />
+        <ButtonWithNumber btnName={btnSeven} icon={<FaDownload />} />
       </div>
     </>
   );

@@ -1,14 +1,14 @@
 export const phoneNumber = 1234567890;
 export const RERA_NUMBER = "UPRERAPRJ184164";
-export const btnOne = "";
-export const btnTwo = "";
-export const btnThree = "";
-export const btnFour = "";
-export const btnFive = "";
-export const btnSix = "";
-export const btnSeven = "";
-export const btnEight = "";
-export const btnNine = "";
+export const btnOne = "Enquire Now";
+export const btnTwo = "Download Now";
+export const btnThree = "Enquire For The Best Prices";
+export const btnFour = "Get Specifications";
+export const btnFive = "Book Now";
+export const btnSix = "Get Project Images and Walkthroughs";
+export const btnSeven = "Get All Floor Plans And Specifications";
+export const btnEight = "Book Site Visit";
+export const projectUrl = "https://www.up-rera.in/projects";
 
 export const imagWithTextData = {
   image: "/banner.jpg",
@@ -23,7 +23,7 @@ export const imagWithTextData = {
   fourthPara:
     "<strong>This CRC Sector 140 Noida</strong>  project is a future-ready destination designed to maximise visibility, customer engagement, and long-term profitability for retailers.",
   reraNumber: `RERA Number: ${RERA_NUMBER}`,
-  btnName: "Enquire Now",
+  btnName: `${btnOne}`,
 };
 
 export const projectOverviewHeading = "Project Overview";
@@ -77,9 +77,10 @@ export const rowWithTextData = {
     "➤ Shoppers and visitors can enjoy a seamless blend of retail, entertainment, and dining within the same vibrant campus of this <strong>CRC commercial project</strong> . Ample parking and premium infrastructure enhance convenience, while luxury serviced suites and office spaces attract a high-profile clientele.",
   reraNumber: `RERA Number: ${RERA_NUMBER}`,
   text: "Limited Units Left… Hurry Up!",
-  btnName: "Enquire For The Best Prices",
+  btnName: `${btnThree}`,
 };
 
+export const amenitiesHeading = "Amenities";
 export const amenitiesData = [
   "Sky Lounge",
   "Putting Golf",
@@ -104,7 +105,6 @@ export const amenitiesData = [
   "Banquet Lawn",
   "Infinity Pool",
 ];
-export const amenitiesBtnName = "Get Specifications";
 
 export const pricingHeading = "Size & Pricing";
 export const pricingTableHeadings = [
@@ -126,6 +126,35 @@ export const priceBtn = "Get Size Layout & Payment Plan";
 export const bookNowData = {
   heading: "Book Your Site Visit Now!",
   text: "Join us for a site visit and secure your perfect retail space in Noida at CRC new project.",
-  btnName: "Book Now",
+  btnName: `${btnFive}`,
   number: phoneNumber,
 };
+
+export const locationHeading = "CRC The Flagship Location Advantages";
+export const locationImage = "/banner.jpg";
+export const locationData = [
+  "Sector 137 Metro - 2 mins*",
+  "Sector 142 Metro Station - 5 mins*",
+  "Noida Expressway - 5 mins*",
+  "ABC Business Park - 7 mins*",
+  "Advant Navis and Oxygen Business Park - 5 mins*",
+  "Infosys - 7 mins*",
+  "Purvanchal Royal Park - 8 mins*",
+  "Gulshan One29 - 7 mins*",
+  "Grand Omaxe - 5 mins*",
+];
+
+export const aboutCrcGropupData = {
+  heading: "About CRC Group",
+  paraOne:
+    "CRC Group Noida is a leading name in real estate, known for delivering premium residential developments that combine reliability, innovation, and unmatched quality. Rooted in a strong legacy that began in 1985 with Shri Kidar Nath Bansal’s Chandgi Ram Nawal Kishore (CRNK)—a trusted name in sanitary ware partnering with brands like Kohler and Jaquar—CRC has built a foundation of trust and excellence.",
+
+  paraTwo:
+    "Established in 2006 under the visionary leadership of Mr. Satish Garg, CRC Group has been transforming the real estate sector with a focus on transparency, customer satisfaction, and cutting-edge design. Each project reflects CRC’s commitment to elevating modern living standards while ensuring value for its clients.",
+  paraThree:
+    "Looking forward, CRC Group is embracing advanced technology and customer-centric solutions to deliver sophisticated, cost-effective homes. With unwavering trust from its clients, CRC continues to innovate and redefine real estate, pushing boundaries for a brighter, more sustainable future.",
+  paraFour: `CRC The Flagship | <strong>${RERA_NUMBER}</strong> | <a href="${projectUrl}" class='text-themeColor font-bold cursor hover:underline' target='_blank'>${projectUrl}</a>`,
+};
+
+export const floorPlanHeading = "Master & Floor Plans";
+export const galleryHeading = "Gallery";
