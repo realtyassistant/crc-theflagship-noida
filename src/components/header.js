@@ -14,7 +14,7 @@ export default function Header() {
         <Image src="/logo.png" alt="Sample" width={80} height={50} />
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-6">
+        <nav className="hidden md:flex gap-10">
           {[
             { label: "Home", href: "/" },
             { label: "Overview", href: "#overview" },
@@ -24,7 +24,7 @@ export default function Header() {
             { label: "Plans", href: "#plans" },
             { label: "Location", href: "#location" },
           ].map((item) => (
-            <a key={item.label} href={item.href} className="font-semibold transition-all duration-300 hover:text-themeColor hover:font-bold">
+            <a key={item.label} href={item.href} className="text-lg font-semibold transition-all duration-300 hover:text-themeColor hover:font-bold">
               {item.label}
             </a>
           ))}
@@ -54,7 +54,7 @@ export default function Header() {
             { label: "Plans", href: "#plans" },
             { label: "Location", href: "#location" },
           ].map((item) => (
-            <a key={item.label} href={item.href} onClick={toggleMenu} className="transition-all duration-300 hover:text-yellow-300 hover:font-bold">
+            <a key={item.label} href={item.href} onClick={toggleMenu} className="text-lg transition-all duration-300 hover:text-yellow-300 hover:font-bold">
               {item.label}
             </a>
           ))}
