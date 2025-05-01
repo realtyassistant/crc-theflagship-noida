@@ -10,7 +10,7 @@ export default function HeroSec() {
         <div className="container mx-auto px-2 sm:px-[90px]">
           <div className="flex justify-between gap-3 lg:gap-40 items-center flex-col lg:flex-row h-auto lg:h-screen py-5">
             <div className="bg-[rgba(255,255,255,0.9)]  rounded-[20px] shadow-[rgba(0, 0, 0, 0.7) 0px 1px 5px] p-5">
-              <h2 className="custom-heading text-center text-themeColor !mb-0">{heroSecCardData?.heading}</h2>
+              <h1 className="custom-heading text-center text-themeColor !mb-0">{heroSecCardData?.heading}</h1>
               <p className="font-bold text-center text-[1.2rem] mb-3">{heroSecCardData?.location}</p>
               <hr className="border-t-2 border-black" />
 
