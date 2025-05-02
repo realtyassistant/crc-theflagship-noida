@@ -27,7 +27,7 @@ export default function ButtonWithNumber({ btnName = "", icon = <FaDownload />, 
       <ModalWraper open={open} setOpen={setOpen}>
         <LeadForm />
       </ModalWraper>
-      {number && (
+      {/* {number && (
         <div className="mt-3 font-bold text-[1.2rem] flex items-center justify-center">
           <IoIosCall className="text-[1.4rem]" />
           <span>Call Us:</span> &nbsp;
@@ -35,7 +35,7 @@ export default function ButtonWithNumber({ btnName = "", icon = <FaDownload />, 
             {phoneNumber}
           </a>
         </div>
-      )}
+      )} */}
     </>
   );
 }
