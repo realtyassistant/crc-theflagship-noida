@@ -11,10 +11,13 @@ export default function Header() {
   return (
     <header className="bg-white text-black sticky top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Image src="/logo.png" alt="Sample" width={80} height={50} />
+        <div className="flex">
+          <Image src="/logo.png" alt="logo" width={100} height={40} />
+          <Image src="/project-logo.webp" alt="logo" width={150} height={40} />
+        </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex gap-10">
+        <nav className="hidden md:flex gap-6">
           {[
             { label: "Home", href: "/" },
             { label: "Overview", href: "#overview" },
