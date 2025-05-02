@@ -8,7 +8,7 @@ export default function Amenities() {
     <>
       <h2 className="custom-heading text-themeColor text-center">{amenitiesHeading}</h2>
       <div className="custom-box-shadow mt-5 mb-6 bg-white">
-        <div className="grid grid-cols-1 lg:grid-cols-12 px-6 gap-3 text-center lg:text-left">
+        <div className="grid grid-cols-12 lg:grid-cols-12 px-6 gap-3 sm:text-center lg:text-left">
           {amenitiesData &&
             amenitiesData.length > 0 &&
             amenitiesData?.map((v, i) => (
