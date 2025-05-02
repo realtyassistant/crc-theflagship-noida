@@ -11,10 +11,10 @@ export default function Footer() {
 
           <p className="text-justify">
             <strong>Disclaimer:</strong> {footerData?.disclaimer} &nbsp;
-            <Link href={"/privacy-policy"} className="font-bold hover:underline">
-              Privacy Policy
-            </Link>
           </p>
+          <Link href={"/privacy-policy"} className="font-bold hover:underline">
+            Privacy Policy
+          </Link>
         </div>
       </div>
     </>
