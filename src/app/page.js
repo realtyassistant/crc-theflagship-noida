@@ -16,13 +16,18 @@ import ProjectOverview from "@/components/projectOverview";
 import RowText from "@/components/rowText";
 import TimerModal from "@/components/timerModal";
 import { phoneNumber, brochureData, bookNowData } from "@/constant";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <>
       <Header />
 
-      <div className="mb-[100px]">
+      <div className="sm:hidden relative w-full h-[800px] mb-3">
+        <Image src="/banner-mobile.webp" alt="banner" fill className=" object-cover" />
+      </div>
+
+      <div className="sm:mb-[100px]">
         <HeroSec />
       </div>
 

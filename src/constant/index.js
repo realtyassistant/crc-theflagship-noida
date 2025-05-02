@@ -14,8 +14,8 @@ export const baseURL = process.env.NEXT_PUBLIC_LEAD_FORM_BASE_URL;
 export const thankYouURL = process.env.NEXT_PUBLIC_LEAD_FORM_THANKYOU;
 
 export const imagWithTextData = {
-  image: "/banner.jpg",
-  alt: "banner",
+  image: "/imgWithText.webp",
+  alt: "opportunities",
   heading: "Push Your Business With Endless Opportunities",
   firstPara:
     "<strong>CRC The Flagship in Sector 140A</strong> is a premium 2.4 million sq. ft. ultra-modern business and retail complex. Designed to meet today’s business needs, <strong>CRC Flagship retail shops in Noida</strong> offer an ideal environment for rapid scalability and expansion.",
@@ -134,7 +134,8 @@ export const bookNowData = {
 };
 
 export const locationHeading = "CRC The Flagship Location Advantages";
-export const locationImage = "/banner.jpg";
+export const locationImg = "/advantage.webp";
+
 export const locationData = [
   "Sector 137 Metro - 2 mins*",
   "Sector 142 Metro Station - 5 mins*",
@@ -186,3 +187,19 @@ export const footerData = {
   disclaimer:
     "The content provided on this website is for information purposes only and does not constitute an offer to avail of any service. The prices mentioned are subject to change without prior notice, and the availability of properties mentioned is not guaranteed. The images displayed on the website are for representation purposes only and may not reflect the actual properties accurately. Please note that this is the official website of an authorised marketing partner. We may share data with Real Estate Regulatory Authority (RERA) registered brokers/companies for further processing as required. We may also send updates and information to the mobile number or email ID registered with us. All rights reserved. The content, design, and information on this website are protected by copyright and other intellectual property rights. Any unauthorised use or reproduction of the content may violate applicable laws. For accurate and up-to-date information regarding services, pricing, availability, and any other details, it is advisable to contact us directly through the provided contact information on this website. Thank you for visiting our website.",
 };
+
+export const floorPlanImages = [
+  { img: "/floor-one.webp" },
+  { img: "/floor-two.webp" },
+  { img: "/floor-three.webp" },
+  { img: "/floor-four.webp" },
+  { img: "/floor-five.webp" },
+];
+
+export const galleryImages = [
+  { img: "/gallery-one.webp" },
+  { img: "/gallery-two.webp" },
+  { img: "/gallery-three.webp" },
+  { img: "/gallery-four.webp" },
+  { img: "/gallery-five.webp" },
+];

@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaCheck } from "../../public/icon";
 import ButtonWithNumber from "./buttonWithNumber";
 import { FaCarAlt } from "../../public/icon";
-import { btnEight, locationHeading, locationData, locationImage } from "@/constant";
+import { btnEight, locationHeading, locationData, locationImg } from "@/constant";
 
 export default function Location() {
   return (
@@ -27,7 +27,7 @@ export default function Location() {
         </div>
         <div className="flex-1">
           <div className="relative w-full h-[350px]">
-            <Image src={locationImage} alt="Sample Image" fill className="rounded-[10px] object-cover" />
+            <Image src={locationImg} alt="Sample Image" fill className="rounded-[10px] object-cover" />
           </div>
         </div>
       </div>

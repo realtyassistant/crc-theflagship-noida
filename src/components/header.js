@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,7 +13,9 @@ export default function Header() {
     <header className="bg-white text-black sticky top-0 left-0 w-full z-50 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex">
-          <Image src="/logo.png" alt="logo" width={100} height={40} className="w-32 h-auto" />
+          <Link href="/">
+            <Image src="/logo.png" alt="logo" width={100} height={40} className="w-32 h-auto" />
+          </Link>
           <Image src="/project-logo.webp" alt="logo" width={150} height={40} className="w-38 h-auto" />
         </div>
 
