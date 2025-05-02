@@ -1,6 +1,7 @@
 import AboutCrcGroup from "@/components/aboutCrcGroup";
 import Amenities from "@/components/amenities";
 import BrochureStrip from "@/components/brochureStrip";
+import CallWithEnquire from "@/components/callWithEnquire";
 import FloorPlan from "@/components/floorPlan";
 import Footer from "@/components/footer";
 import FooterConnect from "@/components/footerConnect";
@@ -84,6 +85,8 @@ export default function Home() {
       <TimerModal autoOpenModal={true}>
         <LeadForm />
       </TimerModal>
+
+      <CallWithEnquire />
     </>
   );
 }
