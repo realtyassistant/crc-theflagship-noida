@@ -53,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
 
         <a
-          href={`https://wa.me/${phoneNumber}`} // Replace with your number
+          href={`https://wa.me/${phoneNumber}`}
           target="_blank"
           rel="noopener noreferrer"
           className="fixed bottom-6 right-6 z-50 bg-green-500 text-white p-3 rounded-full shadow-custom-shadow cursor-pointer hover:bg-green-600 transition"
