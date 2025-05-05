@@ -23,8 +23,8 @@ export default function Home() {
     <>
       <Header />
 
-      <div className="lg:hidden relative w-full h-[300px] mb-3">
-        <Image src="/banner-mobile.webp" alt="banner" fill className=" object-cover" />
+      <div className="lg:hidden relative w-full h-[800px] mb-3">
+        <Image src="/banner-mobile.webp" alt="Mobile banner" fill className="object-cover" sizes="100vw" priority />
       </div>
 
       <div className="sm:mb-[100px]">

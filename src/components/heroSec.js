@@ -6,7 +6,7 @@ import { btnOne, heroSecCardData } from "@/constant";
 export default function HeroSec() {
   return (
     <>
-      <div className="drop-shadow-lg lg:w-full lg:bg-[url('/banner.webp')]">
+      <div className="drop-shadow-lg lg:w-full lg:bg-[url('/banner.webp')] lg:bg-[length:100%_100%] lg:bg-no-repeat">
         <div className="container mx-auto px-2 sm:px-[90px]">
           <div className="flex justify-between gap-3 xl:gap-30 items-center flex-col lg:flex-row h-auto xl:h-screen py-5">
             <div className="bg-[rgba(255,255,255,0.9)]  rounded-[20px] shadow-[rgba(0, 0, 0, 0.7) 0px 1px 5px] p-5 w-full lg:w-auto">
