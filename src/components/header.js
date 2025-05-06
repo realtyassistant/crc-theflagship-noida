@@ -11,12 +11,12 @@ export default function Header() {
 
   return (
     <header className="bg-white text-black sticky top-0 left-0 w-full z-50 shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container mx-auto p-[.2rem] sm:px-4 sm:py-4  flex justify-between items-center">
         <div className="flex">
           <Link href="/">
-            <Image src="/logo.png" alt="logo" width={100} height={40} className="w-32 h-auto" />
+            <Image src="/logo.png" alt="logo" width={100} height={40} className="h-[2rem] w-[4rem] sm:w-32 sm:h-auto" />
           </Link>
-          <Image src="/project-logo.webp" alt="logo" width={150} height={40} className="w-38 h-auto" />
+          <Image src="/project-logo.webp" alt="logo" width={150} height={40} className="w-[6rem] sm:w-38 sm:h-auto" />
         </div>
 
         {/* Desktop Navigation */}

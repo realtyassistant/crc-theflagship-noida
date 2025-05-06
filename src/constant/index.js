@@ -8,6 +8,8 @@ export const btnFive = "Book Now";
 export const btnSix = "Get Project Images and Walkthroughs";
 export const btnSeven = "Get All Floor Plans And Specifications";
 export const btnEight = "Book Site Visit";
+export const btnNine = "Get Floor Plan";
+
 export const projectUrl = "https://www.up-rera.in/projects";
 
 export const baseURL = process.env.NEXT_PUBLIC_LEAD_FORM_BASE_URL;
