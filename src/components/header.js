@@ -16,7 +16,7 @@ export default function Header() {
           <Link href="/">
             <Image src="/logo.png" alt="logo" width={100} height={40} className="h-[2rem] w-[4rem] sm:w-32 sm:h-auto" />
           </Link>
-          <Image src="/project-logo.webp" alt="logo" width={150} height={40} className="w-[6rem] sm:w-38 sm:h-auto" />
+          <Image src="/project-logo.webp" alt="logo" width={150} height={40} className="w-[6rem] sm:w-40 sm:h-auto" />
         </div>
 
         {/* Desktop Navigation */}
