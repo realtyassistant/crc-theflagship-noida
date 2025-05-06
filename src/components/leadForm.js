@@ -2,12 +2,13 @@
 
 import React, { useState } from "react";
 import { FaArrowRightToBracket } from "../../public/icon";
-import { baseURL } from "@/constant";
+import { baseURL, fetchIPData, sendIPData } from "@/constant";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
 
 export default function LeadForm() {
   const router = useRouter();
+  const [loading, setLoading] = useState(false);
 
   const [leadForm, setLeadForm] = useState({
     name: "",
@@ -51,7 +52,7 @@ export default function LeadForm() {
     e.preventDefault();
 
     if (validateForm()) {
-      console.log("✅ Lead Submitted:", leadForm);
+      setLoading(true);
       try {
         const res = await fetch(baseURL, {
           method: "POST",
@@ -74,10 +75,42 @@ export default function LeadForm() {
         if (leadResponse?.status) {
           console.log("lears", leadResponse?.status);
           Cookies.set("leadId", leadResponse?.data, { expires: 7, path: "/" });
+
+          // lead traking start
+          const response = await fetch(fetchIPData);
+          if (!response.ok) {
+            throw new Error("Failed to fetch ip track ID");
+          }
+          const fetchUserIpLocation = await response.json(); // fetch ip track location and other details
+
+          if (fetchUserIpLocation) {
+            // send ip detail
+            await fetch(sendIPData, {
+              method: "POST",
+              headers: {
+                "Content-Type": "application/json",
+              },
+              body: JSON.stringify({
+                project_url: "https://crc-theflagshipnoida.com",
+                tracker_id: Math.floor(Date.now() / 1000),
+                project_id: 890,
+                source_id: 890,
+                client_ip: fetchUserIpLocation?.ipAddress,
+                client_country: fetchUserIpLocation?.countryName,
+                client_city: fetchUserIpLocation?.stateProv,
+                client_location: fetchUserIpLocation?.city,
+                data_val: fetchUserIpLocation,
+              }),
+            });
+          }
+          // end
+
           router.push("/thank-you");
         }
       } catch (e) {
         console.log("something is wrong", e?.message);
+      } finally {
+        setLoading(false);
       }
       setLeadForm({
         name: "",
@@ -111,7 +144,13 @@ export default function LeadForm() {
         </div>
 
         <button type="submit" className="custom-btn flex items-center gap-4 justify-center bg-themeColor">
-          <FaArrowRightToBracket /> Submit
+          {loading ? (
+            <p>loading...</p>
+          ) : (
+            <>
+              <FaArrowRightToBracket /> Submit
+            </>
+          )}
         </button>
       </form>
     </>

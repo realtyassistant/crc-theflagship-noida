@@ -12,6 +12,8 @@ export const projectUrl = "https://www.up-rera.in/projects";
 
 export const baseURL = process.env.NEXT_PUBLIC_LEAD_FORM_BASE_URL;
 export const thankYouURL = process.env.NEXT_PUBLIC_LEAD_FORM_THANKYOU;
+export const fetchIPData = process.env.NEXT_PUBLIC_FETCH_IP_TRACK;
+export const sendIPData = process.env.NEXT_PUBLIC_SEND_IP_DATA;
 
 export const imagWithTextData = {
   image: "/imgWithText.webp",
